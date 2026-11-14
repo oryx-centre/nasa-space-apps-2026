@@ -1,0 +1,340 @@
+{
+  "project": "Harmonization of MODIS and VIIRS Hot Spots \u2014 Punjab, India, October 2025",
+  "challenge": "NASA Space Apps Challenge 2026 \u2014 Harmonization of MODIS and VIIRS Hot Spots",
+  "area_of_interest": {
+    "name": "Punjab, India",
+    "lon": [
+      73.8,
+      76.9
+    ],
+    "lat": [
+      29.5,
+      32.5
+    ]
+  },
+  "window": "2025-10-01 to 2025-10-31",
+  "sources": {
+    "viirs": "NASA FIRMS, VIIRS S-NPP, India 2025 country archive (viirs-snpp_2025_India.csv)",
+    "modis": "NASA FIRMS, MODIS C6.1, India 2025 country archive (modis_2025_India.csv)"
+  },
+  "matching_rule": "Headline tolerance 0.02 deg (~2.2 km): same calendar date AND within 0.02 deg in lat/lon; greedy one-to-one, MODIS by descending FRP, nearest unmatched VIIRS wins. Sensitivity at 0.01/0.03/0.05 deg reported alongside.",
+  "counts": {
+    "viirs_detections": 1902,
+    "modis_detections": 927,
+    "matched_both_sensors": 102,
+    "viirs_only": 1800,
+    "modis_only": 825
+  },
+  "agreement": {
+    "jaccard_index_matched_over_union": 0.0374,
+    "modis_detections_confirmed_by_viirs": 0.11,
+    "viirs_detections_confirmed_by_modis": 0.0536
+  },
+  "frp_mw": {
+    "viirs_total": 10107.0,
+    "modis_total": 13115.8,
+    "matched_viirs_total": 704.1,
+    "matched_modis_total": 1572.5
+  },
+  "daily_calendar": [
+    {
+      "date": "2025-10-01",
+      "viirs": 6,
+      "modis": 4,
+      "matched": 0,
+      "viirs_frp": 28.0,
+      "modis_frp": 25.0
+    },
+    {
+      "date": "2025-10-02",
+      "viirs": 5,
+      "modis": 1,
+      "matched": 0,
+      "viirs_frp": 22.6,
+      "modis_frp": 26.2
+    },
+    {
+      "date": "2025-10-03",
+      "viirs": 11,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 47.1,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-04",
+      "viirs": 27,
+      "modis": 12,
+      "matched": 1,
+      "viirs_frp": 75.6,
+      "modis_frp": 219.5
+    },
+    {
+      "date": "2025-10-05",
+      "viirs": 7,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 29.2,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-06",
+      "viirs": 0,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 0.0,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-07",
+      "viirs": 0,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 0.0,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-08",
+      "viirs": 2,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 2.2,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-09",
+      "viirs": 8,
+      "modis": 4,
+      "matched": 0,
+      "viirs_frp": 20.6,
+      "modis_frp": 30.9
+    },
+    {
+      "date": "2025-10-10",
+      "viirs": 32,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 145.2,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-11",
+      "viirs": 15,
+      "modis": 7,
+      "matched": 0,
+      "viirs_frp": 58.3,
+      "modis_frp": 68.4
+    },
+    {
+      "date": "2025-10-12",
+      "viirs": 20,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 77.9,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-13",
+      "viirs": 16,
+      "modis": 2,
+      "matched": 0,
+      "viirs_frp": 79.6,
+      "modis_frp": 107.1
+    },
+    {
+      "date": "2025-10-14",
+      "viirs": 39,
+      "modis": 26,
+      "matched": 3,
+      "viirs_frp": 174.9,
+      "modis_frp": 194.0
+    },
+    {
+      "date": "2025-10-15",
+      "viirs": 27,
+      "modis": 3,
+      "matched": 0,
+      "viirs_frp": 85.4,
+      "modis_frp": 159.5
+    },
+    {
+      "date": "2025-10-16",
+      "viirs": 27,
+      "modis": 7,
+      "matched": 0,
+      "viirs_frp": 163.6,
+      "modis_frp": 97.9
+    },
+    {
+      "date": "2025-10-17",
+      "viirs": 30,
+      "modis": 13,
+      "matched": 1,
+      "viirs_frp": 120.7,
+      "modis_frp": 228.4
+    },
+    {
+      "date": "2025-10-18",
+      "viirs": 67,
+      "modis": 3,
+      "matched": 0,
+      "viirs_frp": 317.9,
+      "modis_frp": 87.6
+    },
+    {
+      "date": "2025-10-19",
+      "viirs": 97,
+      "modis": 63,
+      "matched": 12,
+      "viirs_frp": 502.6,
+      "modis_frp": 546.0
+    },
+    {
+      "date": "2025-10-20",
+      "viirs": 104,
+      "modis": 3,
+      "matched": 0,
+      "viirs_frp": 421.2,
+      "modis_frp": 59.0
+    },
+    {
+      "date": "2025-10-21",
+      "viirs": 104,
+      "modis": 29,
+      "matched": 3,
+      "viirs_frp": 498.9,
+      "modis_frp": 471.7
+    },
+    {
+      "date": "2025-10-22",
+      "viirs": 65,
+      "modis": 77,
+      "matched": 2,
+      "viirs_frp": 426.3,
+      "modis_frp": 841.8
+    },
+    {
+      "date": "2025-10-23",
+      "viirs": 56,
+      "modis": 2,
+      "matched": 2,
+      "viirs_frp": 307.6,
+      "modis_frp": 55.0
+    },
+    {
+      "date": "2025-10-24",
+      "viirs": 38,
+      "modis": 57,
+      "matched": 4,
+      "viirs_frp": 184.5,
+      "modis_frp": 525.6
+    },
+    {
+      "date": "2025-10-25",
+      "viirs": 113,
+      "modis": 17,
+      "matched": 2,
+      "viirs_frp": 635.3,
+      "modis_frp": 322.8
+    },
+    {
+      "date": "2025-10-26",
+      "viirs": 190,
+      "modis": 46,
+      "matched": 8,
+      "viirs_frp": 1001.9,
+      "modis_frp": 722.1
+    },
+    {
+      "date": "2025-10-27",
+      "viirs": 75,
+      "modis": 149,
+      "matched": 9,
+      "viirs_frp": 367.1,
+      "modis_frp": 1868.1
+    },
+    {
+      "date": "2025-10-28",
+      "viirs": 58,
+      "modis": 0,
+      "matched": 0,
+      "viirs_frp": 317.5,
+      "modis_frp": 0.0
+    },
+    {
+      "date": "2025-10-29",
+      "viirs": 177,
+      "modis": 230,
+      "matched": 36,
+      "viirs_frp": 1341.6,
+      "modis_frp": 2443.2
+    },
+    {
+      "date": "2025-10-30",
+      "viirs": 173,
+      "modis": 132,
+      "matched": 11,
+      "viirs_frp": 1151.6,
+      "modis_frp": 3092.3
+    },
+    {
+      "date": "2025-10-31",
+      "viirs": 313,
+      "modis": 40,
+      "matched": 8,
+      "viirs_frp": 1503.5,
+      "modis_frp": 923.7
+    }
+  ],
+  "critical_periods": {
+    "october_median_daily_viirs_detections": 32,
+    "days_above_2x_median": [
+      "2025-10-18",
+      "2025-10-19",
+      "2025-10-20",
+      "2025-10-21",
+      "2025-10-22",
+      "2025-10-25",
+      "2025-10-26",
+      "2025-10-27",
+      "2025-10-29",
+      "2025-10-30",
+      "2025-10-31"
+    ],
+    "peak_day": "2025-10-31",
+    "peak_day_viirs_detections": 313
+  },
+  "limitations": [
+    "Same-day matching ignores overpass-time differences between Terra/Aqua and Suomi-NPP.",
+    "A 1.1 km box can merge distinct nearby fires and can split one large fire seen as several VIIRS pixels.",
+    "MODIS (1 km) misses small/low-intensity fires VIIRS (375 m) detects; VIIRS also misses some MODIS detections.",
+    "Agreement rates measure cross-sensor consistency, not ground truth.",
+    "Archive 2025 data, not live near-real-time; a live version would use the FIRMS API with a MAP_KEY."
+  ],
+  "tolerance_sensitivity": {
+    "0.01": {
+      "matched": 40,
+      "jaccard": 0.0143,
+      "modis_confirmed_by_viirs": 0.0431,
+      "viirs_confirmed_by_modis": 0.021
+    },
+    "0.02": {
+      "matched": 102,
+      "jaccard": 0.0374,
+      "modis_confirmed_by_viirs": 0.11,
+      "viirs_confirmed_by_modis": 0.0536
+    },
+    "0.03": {
+      "matched": 167,
+      "jaccard": 0.0627,
+      "modis_confirmed_by_viirs": 0.1802,
+      "viirs_confirmed_by_modis": 0.0878
+    },
+    "0.05": {
+      "matched": 282,
+      "jaccard": 0.1107,
+      "modis_confirmed_by_viirs": 0.3042,
+      "viirs_confirmed_by_modis": 0.1483
+    }
+  }
+}
